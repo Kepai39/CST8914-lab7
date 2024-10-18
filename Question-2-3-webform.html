@@ -140,13 +140,14 @@
       
         $(document).ready(function () {
           if ($.urlParam('validate')) {
+            $('.error').length = 1;
             validateInput('name', 'Please enter your name!');
             validateInput('biography', 'Please tell us something about your history!');
             validateInput('gender', 'Please tell us your gender!');
             validateInput('accept_agbs', 'You must accept our terms and conditions!');
       
             if ($('.error').length === 0) {
-              return alert('All inputs are valid.' + $('.error').length);
+              return alert('All inputs are valid.');
             }
           }
         });
