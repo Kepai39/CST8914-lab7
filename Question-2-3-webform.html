@@ -53,17 +53,17 @@
         <legend>Gender<span class="required">*</span></legend>
           <div class="control">
             <!-- added for to the label-->
-            <input id="gender_male" name="gender" type="radio" value="male"/><label for="gender_male">Male</label>
+            <input id="gender_male" name="gender" type="radio" tabindex="0" value="male"/><label for="gender_male">Male</label>
           </div>
           <div class="control">
               <!-- added for to the label-->
-            <input id="gender_female" name="gender" type="radio" value="female" /><label for="gender_female">Female</label>
+            <input id="gender_female" name="gender" type="radio" tabindex="0" value="female" /><label for="gender_female">Female</label>
           </div>
         </fieldset>
 
         <div class="control">
           <!-- added for to the label-->
-          <input id="accept_agbs" name="accept_agbs" type="checkbox" value="1" /><label for="accept_agbs">I accept the terms and conditions <span class="required">*</span></label>
+          <input id="accept_agbs" name="accept_agbs" type="checkbox" tabindex="0" value="1" /><label for="accept_agbs">I accept the terms and conditions <span class="required">*</span></label>
         </div>
         <div class="control">
           <input name="validate" type="hidden" value="1" /><input type="submit" value="Register" />
@@ -144,7 +144,7 @@
             validateInput('biography', 'Please tell us something about your history!');
             validateInput('gender', 'Please tell us your gender!');
             validateInput('accept_agbs', 'You must accept our terms and conditions!');
-      
+            //changed it to fieldset.errors to fix the window, seems .errors was not being used
             if ($('fieldset.errors').length === 0) {
               return alert('All inputs are valid.');
             }
