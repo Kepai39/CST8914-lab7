@@ -146,7 +146,7 @@
             validateInput('accept_agbs', 'You must accept our terms and conditions!');
       
             if ($('.error').length === 0) {
-              return alert('All inputs are valid.');
+              return alert('All inputs are valid.' + $('.error').length);
             }
           }
         });
