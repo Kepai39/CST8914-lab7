@@ -119,7 +119,7 @@
             $elementToDescribe.attr('aria-describedby', input + '_description');
             $errorContainer.append('<li>').find('li:last').append($error);
       
-            if ($(':not(form):focus').length === 0) {
+            if ($(':not(body):focus').length === 0) {
               // See https://stackoverflow.com/questions/46134247/jquery-setting-focus-doesnt-work-in-ie11/
             
             }
