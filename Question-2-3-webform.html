@@ -33,13 +33,15 @@
         <legend>User Information</legend>
         <div class="control">
           <!-- added for to the label and a paragraph explaining required fields-->
+          <!-- added placeholder text-->
           <p id="formInstructions">Fields marked with an asterisk (*) are required.</p>
           <label for="name" placeholder="e.g. Bob Smith">Full name  <span class="required">*</span></label><input id="name" name="name" type="text" required aria-required="true"/>
         </div>
         <div class="control">
           <!-- added for to the label-->
-          <label  for="biography" placeholder="e.g. This is my biography, (javascript here)">Biography</label><textarea id="biography" name="biography" type="text"></textarea>
-          <span>Include examples on your skills in JavaScript.</span>
+          <!-- added placeholder text-->
+          <label id="bioLabel" for="biography" placeholder="e.g. This is my biography, (javascript here)">Biography</label><textarea id="biography" name="biography" type="text" aria-labelledby="bioLabel bioDesc"></textarea>
+          <span id="bioDesc">Include examples on your skills in JavaScript.</span>
         </div>
       </fieldset>
         <!-- Adding label group by using fieldset and Legend-->
