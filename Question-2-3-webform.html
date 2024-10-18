@@ -110,7 +110,7 @@
               $referencedElement = $input;
             }
       // R.G. hint: fix next line ;)
-            $error = $('<a>' + message + '</a>');
+            $error = $(<a href = "#"> + message + '</a>);
             $error.click(function (e) {
               // If we rely on the link's href pointing to the input's ID, it doesn't trigger forms mode in screen readers
               $referencedElement.focus();
@@ -118,7 +118,8 @@
             });
             $elementToDescribe.attr('aria-describedby', input + '_description');
             $errorContainer.append('<li>').find('li:last').append($error);
-      
+              
+              //removed the body
             if ($(':focus').length === 0) {
               // See https://stackoverflow.com/questions/46134247/jquery-setting-focus-doesnt-work-in-ie11/
             
