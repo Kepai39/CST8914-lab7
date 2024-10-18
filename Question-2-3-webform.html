@@ -28,11 +28,13 @@
     <body>
         <h1>Feedback form</h1>
     <form>
+      <!-- I added a fieldset/legend for the name and biography, they seem related so I called it "User information"-->
       <fieldset> 
         <legend>User Information</legend>
         <div class="control">
           <!-- added for to the label-->
-          <label for="name">Full name <span class="required">*</span></label><input id="name" name="name" type="text" />
+          <p id="formInstructions">Fields marked with an asterisk (*) are required.</p>
+          <label for="name">Full name <span class="required">*</span></label><input id="name" name="name" type="text" required aria-required="true"/>
         </div>
         <div class="control">
           <!-- added for to the label-->
