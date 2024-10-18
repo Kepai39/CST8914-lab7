@@ -32,13 +32,13 @@
       <fieldset> 
         <legend>User Information</legend>
         <div class="control">
-          <!-- added for to the label-->
+          <!-- added for to the label and a paragraph explaining required fields-->
           <p id="formInstructions">Fields marked with an asterisk (*) are required.</p>
-          <label for="name">Full name <span class="required">*</span></label><input id="name" name="name" type="text" required aria-required="true"/>
+          <label for="name" placeholder="e.g. Bob Smith">Full name  <span class="required">*</span></label><input id="name" name="name" type="text" required aria-required="true"/>
         </div>
         <div class="control">
           <!-- added for to the label-->
-          <label  for="biography">Biography</label><textarea id="biography" name="biography" type="text"></textarea>
+          <label  for="biography" placeholder="e.g. This is my biography, (javascript here)">Biography</label><textarea id="biography" name="biography" type="text"></textarea>
           <span>Include examples on your skills in JavaScript.</span>
         </div>
       </fieldset>
