@@ -29,21 +29,29 @@
         <h1>Feedback form</h1>
     <form>
         <div class="control">
+          <!-- added for to the label-->
           <label for="name">Full name <span class="required">*</span></label><input id="name" name="name" type="text" />
         </div>
         <div class="control">
-          <label>Biography</label><textarea id="biography" name="biography" type="text"></textarea>
+          <!-- added for to the label-->
+          <label  for="biography">Biography</label><textarea id="biography" name="biography" type="text"></textarea>
           <span>Include examples on your skills in JavaScript.</span>
-        </div>
-        
-          <div>Gender</div>
-          <div class="control">
-            <input id="gender_male" name="gender" type="radio" value="male" /><label>Male</label>
+
+
+        <!-- Adding label group by using fieldset and Legend-->
+        <fieldset>
           </div>
-          <div class="control">
-            <input id="gender_female" name="gender" type="radio" value="female" /><label>Female</label>
+          <legend>Gender</legend>
+            <div class="control">
+              <!-- added for to the label-->
+              <input id="gender_male" name="gender" type="radio" value="male" /><label for="gender_male">Male</label>
+            </div>
+            <div class="control">
+               <!-- added for to the label-->
+              <input id="gender_female" name="gender" type="radio" value="female" /><label for="gender_female">Female</label>
           </div>
-        
+        <fieldset>
+
         <div class="control">
           <input id="accept_agbs" name="accept_agbs" type="checkbox" value="1" /><label>I accept the terms and conditions</label>
         </div>
