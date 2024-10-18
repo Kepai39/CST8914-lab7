@@ -201,16 +201,15 @@ article p {
       <h1 class="logo">The Funion</h1>
       
       <!-- Maybe this could be improved with aria-activedescendant later? -->
-      <nav class="menu">
-        <input type="text" role="combobox" aria-activedescendant="suggestion1" aria-controls="suggestions">
-        <ul id="suggestions" role="listbox">
-          <li id="suggestion1" role="option" tabindex="-1"><a href="#">Home</a></li>
-          <li id="suggestion2" role="option" tabindex="-1"><a href="#">Politics</a></li>
-          <li id="suggestion3" role="option" tabindex="-1"><a href="#">Business</a></li>
-          <li id="suggestion4" role="option" tabindex="-1"></li><a href="#" id="option4">Entertainment</a>
-          <li id="suggestion5" role="option" tabindex="-1"></li><a href="#" id="option5">Sports</a>
-          <li id="suggestion6" role="option" tabindex="-1"></li><a href="#" id="option6" class="btn-search pull-right"><img src="https://raw.githubusercontent.com/udacity/ud891/2de2a0688c68809a3b453db3a24b1a59e8401459/lesson2-focus/02-dom-order/images/search.svg" alt="Search" />Search</a> 
-        </ul>
+      <nav class="menu" aria-activedescendant="option1">
+        <a href="#" id="option1" >Home</a>
+        <a href="#" id="option2">Politics</a>
+        <!-- deleted the tab index everything has order by default -->
+        <a href="#" id="option3">Business</a>
+        <a href="#" id="option4">Entertainment</a>
+        <a href="#" id="option5">Sports</a>
+        <a href="#" id="option" class="btn-search pull-right"><img src="https://raw.githubusercontent.com/udacity/ud891/2de2a0688c68809a3b453db3a24b1a59e8401459/lesson2-focus/02-dom-order/images/search.svg" alt="Search" />Search</a> 
+
       </nav>
     </div>
   </header>
