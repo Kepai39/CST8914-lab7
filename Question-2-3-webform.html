@@ -95,7 +95,6 @@
           if ((value = $.urlParam(input)) === null) {
             if ($('fieldset.errors').length === 0) {
               $('form').prepend('<fieldset class="errors"><legend>Errors</legend><ul></ul></fieldset>');
-              $('.error').length = 1;
             }
       
             $referencedElement = null;
@@ -146,7 +145,7 @@
             validateInput('gender', 'Please tell us your gender!');
             validateInput('accept_agbs', 'You must accept our terms and conditions!');
       
-            if ($('.error').length === 0) {
+            if ($('fieldset.errors').length === 0) {
               return alert('All inputs are valid.');
             }
           }
