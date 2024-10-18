@@ -110,7 +110,7 @@
               $referencedElement = $input;
             }
       // R.G. hint: fix next line ;)
-            $error = $(<a href= "#$input"> + message + </a>);
+            $error = $('<a>' + message + '</a>');
             $error.click(function (e) {
               // If we rely on the link's href pointing to the input's ID, it doesn't trigger forms mode in screen readers
               $referencedElement.focus();
@@ -121,6 +121,7 @@
       
             if ($(':focus').length === 0) {
               // See https://stackoverflow.com/questions/46134247/jquery-setting-focus-doesnt-work-in-ie11/
+            
             }
           } else {
             if ($input.is(':checkbox')) {
