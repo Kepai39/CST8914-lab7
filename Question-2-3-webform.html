@@ -95,6 +95,7 @@
           if ((value = $.urlParam(input)) === null) {
             if ($('fieldset.errors').length === 0) {
               $('form').prepend('<fieldset class="errors"><legend>Errors</legend><ul></ul></fieldset>');
+              $('.error').length = 1;
             }
       
             $referencedElement = null;
@@ -140,7 +141,6 @@
       
         $(document).ready(function () {
           if ($.urlParam('validate')) {
-            $('.error').length = 1;
             validateInput('name', 'Please enter your name!');
             validateInput('biography', 'Please tell us something about your history!');
             validateInput('gender', 'Please tell us your gender!');
