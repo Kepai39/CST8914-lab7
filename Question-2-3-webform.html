@@ -110,7 +110,7 @@
               $referencedElement = $input;
             }
       // R.G. hint: fix next line ;)
-            // it jumps to the error page, also inserted tab priority when the error appears
+            // it jumps to the error page, also inserted tab priority when the error appears so that next tab order is errors prioritized
             $error = $('<a tabindex="5" id = "errorLink" href = input>' + message +'</a>');
             $error.click(function (e) {
               $referencedElement.focus();
